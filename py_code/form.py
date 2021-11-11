@@ -21,43 +21,45 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.backgroundfon = QtWidgets.QLabel(self.centralwidget)
         self.backgroundfon.setGeometry(QtCore.QRect(0, 0, 701, 531))
-        self.backgroundfon.setStyleSheet("background-color:qlineargradient(spread:pad, x1:0.313, y1:0.630682, x2:0.074, y2:0.63, stop:0.926136 rgba(129, 44, 239, 255), stop:1 rgba(255, 255, 255, 255))")
+        self.backgroundfon.setStyleSheet("background-color:qlineargradient(spread:pad, x1:0.313, y1:0.630682, "
+                                         "x2:0.074, y2:0.63, stop:0.926136 rgba(129, 44, 239, 255), stop:1 rgba(255, "
+                                         "255, 255, 255))")
         self.backgroundfon.setText("")
         self.backgroundfon.setObjectName("backgroundfon")
         self.now = QtWidgets.QPushButton(self.centralwidget)
         self.now.setGeometry(QtCore.QRect(0, 10, 51, 41))
         self.now.setStyleSheet("color: black;\n"
-"background-color: rgb(200, 0,255);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 14px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center;")
+                               "background-color: rgb(200, 0,255);\n"
+                               "width: 75px;\n"
+                               "height: 50px;\n"
+                               "font-size: 14px;\n"
+                               "font-weight: bold;\n"
+                               "border: none;\n"
+                               "text-align: center;")
         self.now.setObjectName("now")
         self.playlists = QtWidgets.QPushButton(self.centralwidget)
         self.playlists.setGeometry(QtCore.QRect(0, 60, 51, 41))
         self.playlists.setStyleSheet("color: black;\n"
-"background-color: rgb(200, 0,255);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 14px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center\n"
-"")
+                                     "background-color: rgb(200, 0,255);\n"
+                                     "width: 75px;\n"
+                                     "height: 50px;\n"
+                                     "font-size: 14px;\n"
+                                     "font-weight: bold;\n"
+                                     "border: none;\n"
+                                     "text-align: center\n"
+                                     "")
         self.playlists.setObjectName("playlists")
         self.graph = QtWidgets.QPushButton(self.centralwidget)
         self.graph.setGeometry(QtCore.QRect(0, 500, 51, 23))
         self.graph.setStyleSheet("color: black;\n"
-"background-color: rgb(200, 0,255);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 14px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center\n"
-"")
+                                 "background-color: rgb(200, 0,255);\n"
+                                 "width: 75px;\n"
+                                 "height: 50px;\n"
+                                 "font-size: 14px;\n"
+                                 "font-weight: bold;\n"
+                                 "border: none;\n"
+                                 "text-align: center\n"
+                                 "")
         self.graph.setObjectName("graph")
         self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(120, 40, 531, 461))
@@ -68,10 +70,10 @@ class Ui_MainWindow(object):
         self.media_now = QtWidgets.QLabel(self.verticalLayoutWidget)
         self.media_now.setMaximumSize(QtCore.QSize(16777215, 50))
         self.media_now.setStyleSheet("background-color: rgb(0, 0, 0);\n"
-"font: 16pt \"MS Shell Dlg 2\";\n"
-"color: white;\n"
-"text-align: center;\n"
-"")
+                                     "font: 16pt \"MS Shell Dlg 2\";\n"
+                                     "color: white;\n"
+                                     "text-align: center;\n"
+                                     "")
         self.media_now.setText("")
         self.media_now.setObjectName("media_now")
         self.wind_now.addWidget(self.media_now)
@@ -85,7 +87,7 @@ class Ui_MainWindow(object):
         self.playlists_sp = QtWidgets.QListWidget(self.centralwidget)
         self.playlists_sp.setGeometry(QtCore.QRect(80, 20, 611, 491))
         self.playlists_sp.setStyleSheet("background-color: rgb(123, 7, 255);\n"
-"color: white")
+                                        "color: white")
         self.playlists_sp.setObjectName("playlists_sp")
         self.hello = QtWidgets.QLabel(self.centralwidget)
         self.hello.setGeometry(QtCore.QRect(60, 0, 631, 531))
@@ -93,101 +95,101 @@ class Ui_MainWindow(object):
         self.add_file = QtWidgets.QPushButton(self.centralwidget)
         self.add_file.setGeometry(QtCore.QRect(0, 120, 61, 51))
         self.add_file.setStyleSheet("color: white;\n"
-"background-color: rgb(0, 0,0);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 12px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center;")
+                                    "background-color: rgb(0, 0,0);\n"
+                                    "width: 75px;\n"
+                                    "height: 50px;\n"
+                                    "font-size: 12px;\n"
+                                    "font-weight: bold;\n"
+                                    "border: none;\n"
+                                    "text-align: center;")
         self.add_file.setObjectName("add_file")
         self.create_playlist = QtWidgets.QPushButton(self.centralwidget)
         self.create_playlist.setGeometry(QtCore.QRect(0, 180, 61, 41))
         self.create_playlist.setStyleSheet("color: white;\n"
-"background-color: rgb(0, 0,0);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 12px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center;")
+                                           "background-color: rgb(0, 0,0);\n"
+                                           "width: 75px;\n"
+                                           "height: 50px;\n"
+                                           "font-size: 12px;\n"
+                                           "font-weight: bold;\n"
+                                           "border: none;\n"
+                                           "text-align: center;")
         self.create_playlist.setObjectName("create_playlist")
         self.back = QtWidgets.QPushButton(self.centralwidget)
         self.back.setGeometry(QtCore.QRect(0, 230, 61, 41))
         self.back.setStyleSheet("color: white;\n"
-"background-color: rgb(0, 0,0);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 12px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center;")
+                                "background-color: rgb(0, 0,0);\n"
+                                "width: 75px;\n"
+                                "height: 50px;\n"
+                                "font-size: 12px;\n"
+                                "font-weight: bold;\n"
+                                "border: none;\n"
+                                "text-align: center;")
         self.back.setObjectName("back")
         self.in_playlist = QtWidgets.QListWidget(self.centralwidget)
         self.in_playlist.setGeometry(QtCore.QRect(80, 20, 611, 491))
         self.in_playlist.setStyleSheet("background-color: rgb(123, 7, 255);\n"
-"color: white")
+                                       "color: white")
         self.in_playlist.setObjectName("in_playlist")
         self.done = QtWidgets.QPushButton(self.centralwidget)
         self.done.setGeometry(QtCore.QRect(0, 440, 61, 41))
         self.done.setStyleSheet("color: white;\n"
-"background-color: rgb(0, 0,0);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 10px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center;")
+                                "background-color: rgb(0, 0,0);\n"
+                                "width: 75px;\n"
+                                "height: 50px;\n"
+                                "font-size: 10px;\n"
+                                "font-weight: bold;\n"
+                                "border: none;\n"
+                                "text-align: center;")
         self.done.setObjectName("done")
         self.lcdNumber = QtWidgets.QLCDNumber(self.centralwidget)
         self.lcdNumber.setGeometry(QtCore.QRect(0, 410, 64, 23))
         self.lcdNumber.setStyleSheet("color: white;\n"
-"background-color: rgb(0, 0,0);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 12px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center;")
+                                     "background-color: rgb(0, 0,0);\n"
+                                     "width: 75px;\n"
+                                     "height: 50px;\n"
+                                     "font-size: 12px;\n"
+                                     "font-weight: bold;\n"
+                                     "border: none;\n"
+                                     "text-align: center;")
         self.lcdNumber.setObjectName("lcdNumber")
         self.delete_playlist = QtWidgets.QPushButton(self.centralwidget)
         self.delete_playlist.setGeometry(QtCore.QRect(0, 180, 61, 41))
         self.delete_playlist.setStyleSheet("color: white;\n"
-"background-color: rgb(0, 0,0);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 12px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center;")
+                                           "background-color: rgb(0, 0,0);\n"
+                                           "width: 75px;\n"
+                                           "height: 50px;\n"
+                                           "font-size: 12px;\n"
+                                           "font-weight: bold;\n"
+                                           "border: none;\n"
+                                           "text-align: center;")
         self.delete_playlist.setObjectName("delete_playlist")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(80, 220, 611, 91))
         self.label.setStyleSheet("color:  White;\n"
-"font: 18pt \"MS Shell Dlg 2\";\n"
-"background-color: rgb(0, 0, 0)")
+                                 "font: 18pt \"MS Shell Dlg 2\";\n"
+                                 "background-color: rgb(0, 0, 0)")
         self.label.setObjectName("label")
         self.delete_directory = QtWidgets.QPushButton(self.centralwidget)
         self.delete_directory.setGeometry(QtCore.QRect(0, 230, 61, 41))
         self.delete_directory.setStyleSheet("color: white;\n"
-"background-color: rgb(0, 0,0);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 10px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center;")
+                                            "background-color: rgb(0, 0,0);\n"
+                                            "width: 75px;\n"
+                                            "height: 50px;\n"
+                                            "font-size: 10px;\n"
+                                            "font-weight: bold;\n"
+                                            "border: none;\n"
+                                            "text-align: center;")
         self.delete_directory.setObjectName("delete_directory")
         self.update_playlist = QtWidgets.QPushButton(self.centralwidget)
         self.update_playlist.setGeometry(QtCore.QRect(0, 280, 61, 41))
         self.update_playlist.setStyleSheet("color: white;\n"
-"background-color: rgb(0, 0,0);\n"
-"width: 75px;\n"
-"height: 50px;\n"
-"font-size: 10px;\n"
-"font-weight: bold;\n"
-"border: none;\n"
-"text-align: center;")
+                                           "background-color: rgb(0, 0,0);\n"
+                                           "width: 75px;\n"
+                                           "height: 50px;\n"
+                                           "font-size: 10px;\n"
+                                           "font-weight: bold;\n"
+                                           "border: none;\n"
+                                           "text-align: center;")
         self.update_playlist.setObjectName("update_playlist")
         self.pause = QtWidgets.QPushButton(self.centralwidget)
         self.pause.setGeometry(QtCore.QRect(60, 60, 41, 41))
@@ -196,7 +198,7 @@ class Ui_MainWindow(object):
         self.back_media = QtWidgets.QPushButton(self.centralwidget)
         self.back_media.setGeometry(QtCore.QRect(60, 110, 21, 41))
         self.back_media.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";\n"
-"font: 16pt \"MS Shell Dlg 2\";")
+                                      "font: 16pt \"MS Shell Dlg 2\";")
         self.back_media.setObjectName("back_media")
         self.next_media = QtWidgets.QPushButton(self.centralwidget)
         self.next_media.setGeometry(QtCore.QRect(80, 110, 21, 41))
@@ -222,25 +224,27 @@ class Ui_MainWindow(object):
         self.now.setText(_translate("MainWindow", "now"))
         self.playlists.setText(_translate("MainWindow", "playlists"))
         self.graph.setText(_translate("MainWindow", "graph"))
-        self.hello.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt;\">Добро пожаловать в NS-player</span></p></body></html>"))
+        self.hello.setText(_translate("MainWindow",
+                                      "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt;\">Добро "
+                                      "пожаловать в NS-player</span></p></body></html>"))
         self.add_file.setText(_translate("MainWindow", "Добавить\n"
-"файлы"))
+                                                       "файлы"))
         self.create_playlist.setText(_translate("MainWindow", "создать\n"
-"плейлист\n"
-""))
+                                                              "плейлист\n"
+                                                              ""))
         self.back.setText(_translate("MainWindow", "общее\n"
-"меню"))
+                                                   "меню"))
         self.done.setText(_translate("MainWindow", "Завершить"))
         self.delete_playlist.setText(_translate("MainWindow", "удалить\n"
-"плейлист\n"
-""))
+                                                              "плейлист\n"
+                                                              ""))
         self.label.setText(_translate("MainWindow", "\"Общий плейлист\" удалить нельзя"))
         self.delete_directory.setText(_translate("MainWindow", "Удалить\n"
-"директорию"))
+                                                               "директорию"))
         self.update_playlist.setText(_translate("MainWindow", "Добавить\n"
-"файлы\n"
-"в плейлист\n"
-""))
+                                                              "файлы\n"
+                                                              "в плейлист\n"
+                                                              ""))
         self.pause.setText(_translate("MainWindow", "❚❚"))
         self.back_media.setText(_translate("MainWindow", "◁"))
         self.next_media.setText(_translate("MainWindow", "▷"))

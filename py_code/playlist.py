@@ -117,7 +117,7 @@ class Playlist:
                 if not self.db.cursor().execute("""select m.name from Medias m
                     join Playlists p on p.id = m.idPlaylists
                         where p.name like ?""", (
-                self.item.text(),)).fetchall() and self.item.text() != "Общий плейлист":
+                        self.item.text(),)).fetchall() and self.item.text() != "Общий плейлист":
                     self.db.cursor().execute("delete from Playlists where name like ?", (self.item.text(),))
                     # Удаление плейлиста, с условием, что он пустой и не общий
                     self.db.commit()
@@ -197,8 +197,8 @@ class Playlist:
                 self.db.cursor().execute("delete from Places where place like ?", (directory,))
                 self.db.cursor().execute("""update Playlists set count = ?
                                             where id = ?""", (len(self.db.cursor().execute("""select id from Medias
-                            where idPlaylists = 1""").fetchall()[0]) if self.db.cursor().execute("""select id from Medias
-                            where idPlaylists = 1""").fetchall() else 0, '1'))
+                            where idPlaylists = 1""").fetchall()[0]) if self.db.cursor().execute("""select id from 
+                            Medias where idPlaylists = 1""").fetchall() else 0, '1'))
                 self.db.commit()
 
     def add_to_playlist(self):  # добавление в плейлист

@@ -5,7 +5,6 @@ from PyQt5.QtGui import QColor
 from PyQt5.QtWidgets import QTableWidgetItem
 
 
-
 class NowPlaylist:
     def __init__(self):
         super().__init__()

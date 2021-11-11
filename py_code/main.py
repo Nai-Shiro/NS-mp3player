@@ -11,6 +11,7 @@ from my_graph import WindowGraph
 from my_media_player import NowPlaylist
 from playlist import Playlist
 
+
 class Window_Main(QMainWindow, Ui_MainWindow, Playlist, NowPlaylist):
     def __init__(self):
         super(Window_Main, self).__init__()
@@ -118,7 +119,6 @@ class Window_Main(QMainWindow, Ui_MainWindow, Playlist, NowPlaylist):
     def graph_show(self):  # Показ окна графика
         self.w2 = WindowGraph()
         self.w2.show()
-
 
 
 if __name__ == '__main__':

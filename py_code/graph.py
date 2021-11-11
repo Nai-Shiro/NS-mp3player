@@ -43,4 +43,6 @@ class Ui_Form(object):
         self.max_s.setText(_translate("Form", "<html><head/><body><p>максимальная</p><p> длинна:</p></body></html>"))
         self.avrg.setText(_translate("Form", "<html><head/><body><p>средняя</p><p> длинна:</p></body></html>"))
         self.min_s.setText(_translate("Form", "<html><head/><body><p>минимальная</p><p> длинна:</p></body></html>"))
+
+
 from pyqtgraph import PlotWidget
